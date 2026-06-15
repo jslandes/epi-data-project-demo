@@ -16,7 +16,7 @@ This repo tracks the data work behind our quarterly communicable disease report.
 If you're new to the team, start with [`docs/data-dictionary.md`](docs/data-dictionary.md) and [`docs/suppression-policy.md`](docs/suppression-policy.md).
 
 ## Repository layout
-
+```
 /
 ├── data/
 │   ├── raw/            ← Original exports from the surveillance system (do not edit)
