@@ -4,8 +4,6 @@
 **Reporting period:** Q3 2024 (July 1 - September 30)  
 **Status:** 🟡 In progress - data cleaning phase
 
----
-
 ## What this repository is for
 
 This repo tracks the data work behind our quarterly communicable disease report. That includes:
@@ -17,11 +15,8 @@ This repo tracks the data work behind our quarterly communicable disease report.
 
 If you're new to the team, start with [`docs/data-dictionary.md`](docs/data-dictionary.md) and [`docs/suppression-policy.md`](docs/suppression-policy.md).
 
----
-
 ## Repository layout
 
-```
 /
 ├── data/
 │   ├── raw/            ← Original exports from the surveillance system (do not edit)
@@ -46,7 +41,6 @@ If you're new to the team, start with [`docs/data-dictionary.md`](docs/data-dict
     └── changelog.md             ← Running log of data changes and decisions
 ```
 
----
 
 ## How we use GitHub Issues and Projects
 
@@ -57,8 +51,6 @@ Every task, problem, or decision that affects the analysis gets an Issue. This i
 - Hand off work without losing context
 
 The **[Q3 2024 Report Board](../../projects)** is our main project board. Check it at the start of every team meeting.
-
----
 
 ## Data notes for this quarter
 
@@ -73,8 +65,6 @@ The **[Q3 2024 Report Board](../../projects)** is our main project board. Check 
 | Report format | RMarkdown → HTML and PDF |
 | Known issues | See [open issues](../../issues) |
 
----
-
 ## R environment
 
 We use `renv` to keep package versions consistent across machines. After cloning:
@@ -86,8 +76,6 @@ renv::restore()
 
 Key packages: `tidyverse`, `janitor`, `lubridate`, `knitr`, `rmarkdown`, `kableExtra`, `ggplot2`, `readxl`, `here`.
 
----
-
 ## Contacts
 
 | Role | Person |
@@ -96,8 +84,6 @@ Key packages: `tidyverse`, `janitor`, `lubridate`, `knitr`, `rmarkdown`, `kableE
 | Epi lead | Dr. Reyes |
 | Report coordinator | Sam W. |
 | IT/systems contact | helpdesk@region4health.org |
-
----
 
 ## Quick links
 
