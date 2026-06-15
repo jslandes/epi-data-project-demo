@@ -1,8 +1,8 @@
 # Communicable Disease Quarterly Report — Data Pipeline
 
 **Workgroup:** Region 4 Epidemiology Data Team  
-**Reporting period:** Q3 2024 (July 1 – September 30)  
-**Status:** 🟡 In progress — data cleaning phase
+**Reporting period:** Q3 2024 (July 1 - September 30)  
+**Status:** 🟡 In progress - data cleaning phase
 
 ---
 
