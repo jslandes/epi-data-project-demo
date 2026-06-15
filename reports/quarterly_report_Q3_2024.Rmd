@@ -1,1 +1,142 @@
+---
+title: "Communicable Disease Quarterly Report — Q3 2024"
+subtitle: "Region 4 Epidemiology Unit | July 1 – September 30, 2024"
+author: "Region 4 Epidemiology Data Team"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  html_document:
+    theme: flatly
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    df_print: kable
+  pdf_document:
+    toc: true
+    toc_depth: 3
+---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo    = FALSE,
+  warning = FALSE,
+  message = FALSE
+)
+
+library(tidyverse)
+library(kableExtra)
+library(lubridate)
+library(here)
+```
+
+```{r load-data}
+# NOTE: This report depends on the suppressed dataset.
+# Run scripts 01 through 03 before knitting.
+# Issue #7 (FIPS fixes) and Issue #9 (date field) must be resolved first.
+
+cases <- read_csv(
+  here("data", "cleaned", "cases_q3_2024_suppressed.csv"),
+  col_types = cols(.default = col_character())
+)
+```
+
+---
+
+> **Draft status:** This report is in progress. Sections marked ⚠️ depend on 
+> open issues and contain placeholder text.
+
+---
+
+## Summary
+
+During Q3 2024 (July 1 – September 30), Region 4 reported a total of 
+**`r nrow(cases)`** cases of notifiable communicable diseases across 
+**`r n_distinct(cases$county_fips)`** counties.
+
+```{r summary-table}
+cases |>
+  count(disease_group, disease, name = "Cases") |>
+  arrange(disease_group, disease) |>
+  kbl(caption = "Table 1. Cases by disease, Q3 2024") |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) |>
+  pack_rows(index = table(
+    cases |> arrange(disease_group) |> pull(disease_group)
+  ))
+```
+
+---
+
+## Enteric diseases
+
+```{r enteric-table}
+cases |>
+  filter(disease_group == "Enteric") |>
+  count(county_name, disease, name = "n_display") |>
+  pivot_wider(names_from = disease, values_from = n_display, values_fill = "0") |>
+  kbl(caption = "Table 2. Enteric disease cases by county, Q3 2024") |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+---
+
+## Vaccine-preventable diseases
+
+```{r vax-table}
+cases |>
+  filter(disease_group == "Vaccine-preventable") |>
+  count(county_name, disease, name = "n") |>
+  kbl(caption = "Table 3. Vaccine-preventable disease cases by county, Q3 2024") |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+---
+
+## Vector-borne diseases
+
+```{r vectorborne-table}
+cases |>
+  filter(disease_group == "Vector-borne") |>
+  count(county_name, disease, name = "n") |>
+  kbl(caption = "Table 4. Vector-borne disease cases by county, Q3 2024") |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+---
+
+## ⚠️ Trends over time
+
+> This section depends on resolution of [Issue #9](../../issues/9) (date field 
+> selection). Figures will be added once the primary date field is confirmed.
+
+```{r time-trend, eval=FALSE}
+# Placeholder — waiting on Issue #9
+
+cases |>
+  mutate(report_week = floor_date(as.Date(report_date), "week")) |>
+  count(report_week, disease_group) |>
+  ggplot(aes(x = report_week, y = n, color = disease_group)) +
+  geom_line() +
+  geom_point(size = 1.5) +
+  labs(
+    title = "Weekly case counts by disease group, Q3 2024",
+    x     = NULL,
+    y     = "Cases",
+    color = "Disease group"
+  ) +
+  theme_minimal()
+```
+
+---
+
+## Methods note
+
+Cell suppression was applied per [`docs/suppression-policy.md`](../docs/suppression-policy.md). 
+Cells with fewer than 5 cases are displayed as `<5`. 
+Complementary suppression was applied where needed to prevent back-calculation.
+
+---
+
+## Data notes
+
+- Source: State notifiable disease surveillance system, export date 2024-10-04
+- Analysis: R `r R.version$major`.`r R.version$minor`, tidyverse `r packageVersion("tidyverse")`
+- Report generated: `r Sys.time()`
