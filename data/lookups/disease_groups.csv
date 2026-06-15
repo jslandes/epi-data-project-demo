@@ -1,0 +1,7 @@
+disease,disease_group,icd10_code,reportable_category
+Salmonella (non-typhoidal),Enteric,A02.0,Immediately reportable
+Campylobacter,Enteric,A04.5,Reportable within 24 hours
+Shigella,Enteric,A03.9,Reportable within 24 hours
+Hepatitis A,Vaccine-preventable,B15.9,Reportable within 24 hours
+Pertussis,Vaccine-preventable,A37.0,Reportable within 24 hours
+Lyme disease,Vector-borne,A69.20,Reportable within 7 days
