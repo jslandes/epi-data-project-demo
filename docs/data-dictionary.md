@@ -1,4 +1,4 @@
-# Data dictionary — Q3 2024 case data
+# Data dictionary for Q3 2024 case data
 
 Last updated: 2024-10-07 | Maintained by: Jordan T.
 
