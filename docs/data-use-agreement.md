@@ -3,7 +3,7 @@
 **Agreement reference:** DUA-2024-R4-047  
 **Effective:** January 1, 2024 – December 31, 2024  
 **Data provider:** State Department of Health, Division of Epidemiology  
-**Data recipient:** Region 4 Public Health — Epidemiology Unit
+**Data recipient:** Region 4 Public Health, Epidemiology Unit
 
 This page summarizes the terms most relevant to our day-to-day analysis work. It is not a substitute for the full executed agreement, which is stored on the shared drive (not in this repository).
 
