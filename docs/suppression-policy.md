@@ -20,7 +20,7 @@ When suppression of a small cell would allow someone to calculate the suppressed
 
 Example: if a county has 3 Salmonella cases (suppressed) and 47 total enteric cases, publishing both numbers would reveal the suppressed count. In that situation, we suppress the next-smallest disease category for that county as well.
 
-The logic for this is in `03_suppress.R` starting at line 88. See [Issue #11](../../issues/11) for the discussion around edge cases.
+The logic for this is in `03_suppress.R` starting at line 88. See [Issue #6](/../../issues/11) for the discussion around edge cases.
 
 ---
 
@@ -28,7 +28,7 @@ The logic for this is in `03_suppress.R` starting at line 88. See [Issue #11](..
 
 - Statewide totals
 - Disease groups (as opposed to individual diseases) at the county level, unless the group itself is under 5
-- Zero counts — a zero is published as 0, not suppressed
+- Zero counts - a zero is published as 0 is not suppressed, unless the 0 identifies information about every member of a group
 
 ---
 
