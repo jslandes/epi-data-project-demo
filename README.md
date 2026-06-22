@@ -1,4 +1,4 @@
-# Communicable Disease Quarterly Report
+# Communicable Disease Quarterly Report - Data Pipeline
 
 **Workgroup:** Region 4 Epidemiology Data Team  
 **Reporting period:** Q3 2024 (July 1 - September 30)  
@@ -14,6 +14,10 @@ This repo tracks the data work behind our quarterly communicable disease report.
 - Keeping a record of every analytical decision we made and why
 
 If you're new to the team, start with [`docs/data-dictionary.md`](docs/data-dictionary.md) and [`docs/suppression-policy.md`](docs/suppression-policy.md).
+
+### What a data pipeline is
+
+"A data pipeline is a method in which raw data is ingested from various data sources, transformed and then ported to a data store...before analysis. Before data flows into a data repository, it usually undergoes some data processing. This is inclusive of data transformations, such as filtering, masking, and aggregations, which ensure appropriate data integration and standardization." Thanks, [IBM](https://www.ibm.com/think/topics/data-pipeline)!
 
 ## Repository layout
 ```
