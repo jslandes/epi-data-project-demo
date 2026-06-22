@@ -6,9 +6,10 @@ There was an important job to be done, and Everybody was sure that Somebody woul
 *Charles R. Swindoll*
 
 ## Applied to data science
+GitHub helps you ensure your projects are reproducible, transparent, and documented.
 - Reproducibility means **Anybody** can run the same steps and get the same result.
 - Transparency means **Everybody** can see the current state of the work without asking **Somebody**.
-- A historical record means **Nobody** ever has to reconstruct a decision from memory.
+- Documentation means **Nobody** ever has to reconstruct a decision from memory.
 
 ## Source
 [https://www.majagrcic.com/blog/everybody-somebody-anybody-and-nobody](https://www.majagrcic.com/blog/everybody-somebody-anybody-and-nobody)
