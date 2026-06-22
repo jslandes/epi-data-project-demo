@@ -16,11 +16,11 @@ This document defines every variable in the cleaned case-level dataset (`data/cl
 | `report_date` | date | Date case was reported to the health department | YYYY-MM-DD format |
 | `onset_date` | date | Patient-reported or estimated date of symptom onset | Missing in ~18% of records; see [Issue #5](/../../issues/5) |
 | `invest_complete_date` | date | Date investigation was marked complete | |
-| `county_fips` | character | 5-digit FIPS code for county of residence | Leading zeros preserved as character; see [Issue #7](../../issues/7) |
+| `county_fips` | character | 5-digit FIPS code for county of residence | Leading zeros preserved as character; see [Issue #4](/../../issues/4) |
 | `county_name` | character | County name | Added in `02_clean.R` via FIPS lookup |
 | `age_group` | character | Age group at time of report | 5-year bands; `<1`, `1-4`, `5-9`, ... `85+` |
 | `sex` | character | Sex as recorded in surveillance system | `Male`, `Female`, `Unknown` |
-| `race_ethnicity` | character | Combined race/ethnicity field | Recoded to OMB 2024 categories; see [Issue #14](../../issues/14) |
+| `race_ethnicity` | character | Combined race/ethnicity field | Recoded to OMB 2024 categories; see [Issue #8](/../../issues/8) |
 | `hospitalized` | logical | Whether hospitalization was recorded | `TRUE`, `FALSE`, `NA` |
 | `outcome` | character | Case outcome | `Alive`, `Died`, `Unknown` |
 | `imported` | logical | Whether case was travel-related/imported | |
@@ -44,7 +44,7 @@ This document defines every variable in the cleaned case-level dataset (`data/cl
 
 ## Date field guidance
 
-There is an open decision on which date field to use as the primary analysis date. See [Issue #9](../../issues/9) for the full discussion. Until that issue is closed, `02_clean.R` retains both `report_date` and `onset_date` and does not derive an `analysis_date` field.
+There is an open decision on which date field to use as the primary analysis date. See [Issue #5](/../../issues/5) for the full discussion. Vote on it using the [poll](/../../discussions/14) Until that issue is closed, `02_clean.R` retains both `report_date` and `onset_date` and does not derive an `analysis_date` field.
 
 ---
 
