@@ -1,4 +1,4 @@
-# Data use agreement
+# Data use agreement - key terms
 
 **Agreement reference:** DUA-2024-R4-047  
 **Effective:** January 1, 2024 – December 31, 2024  
