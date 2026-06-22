@@ -31,7 +31,7 @@ This document defines every variable in the cleaned case-level dataset (`data/cl
 
 ## Disease groupings
 
-| `disease` value | `disease_group` |
+| `disease` | `disease_group` |
 |---|---|
 | Salmonella (non-typhoidal) | Enteric |
 | Campylobacter | Enteric |
