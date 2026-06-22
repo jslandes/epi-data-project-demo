@@ -2,7 +2,7 @@
 
 This file records significant changes to the data or analysis decisions. For full context on any entry, follow the linked Issue.
 
-Format: `YYYY-MM-DD — Description — [Issue #N]`
+Format: `YYYY-MM-DD Description [Issue #N]`
 
 ---
 
