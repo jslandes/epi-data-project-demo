@@ -28,7 +28,7 @@ The logic for this is in `03_suppress.R` starting at line 88. See [Issue #6](/..
 
 - Statewide totals
 - Disease groups (as opposed to individual diseases) at the county level, unless the group itself is under 5
-- Zero counts - a zero is published as 0 is not suppressed, unless the 0 identifies information about every member of a group
+- Zero counts, unless the 0 identifies information about every member of a group
 
 ---
 
