@@ -14,7 +14,7 @@ This document defines every variable in the cleaned case-level dataset (`data/cl
 | `disease` | character | Disease name (see disease groupings below) | Standardized in `02_clean.R` |
 | `disease_group` | character | Broad grouping for summary tables | See `data/lookups/disease_groups.csv` |
 | `report_date` | date | Date case was reported to the health department | YYYY-MM-DD format |
-| `onset_date` | date | Patient-reported or estimated date of symptom onset | Missing in ~18% of records; see Issue #5 |
+| `onset_date` | date | Patient-reported or estimated date of symptom onset | Missing in ~18% of records; see [Issue #5](/../../issues/5) |
 | `invest_complete_date` | date | Date investigation was marked complete | |
 | `county_fips` | character | 5-digit FIPS code for county of residence | Leading zeros preserved as character; see [Issue #7](../../issues/7) |
 | `county_name` | character | County name | Added in `02_clean.R` via FIPS lookup |
