@@ -20,7 +20,7 @@ This page summarizes the terms most relevant to our day-to-day analysis work. It
 - Publish or share case-level data outside named agreement parties
 - Link this dataset to other datasets without an amendment to the agreement
 - Store data on personal devices or unapproved cloud storage
-- Commit unsuppressed data to GitHub or any version-controlled repository
+- Commit unsuppressed data to GitHub or any version-controlled repository (not true in demo; you'll see I put fake raw [unsuppressed], cleaned [unsuppressed], cleaned [suppressed] data files in the folders)
 
 ## Cell suppression requirement
 
