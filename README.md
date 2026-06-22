@@ -50,7 +50,7 @@ Every task, problem, or decision that affects the analysis gets an Issue. This i
 - Record *why* we made analytical decisions, not just what we did
 - Hand off work without losing context
 
-The **[Q3 2024 Report Board](../../projects)** is our main project board. Check it at the start of every team meeting.
+The [Q3 2024 Report Board](../../projects) is our main project board. Check it at the start of every team meeting.
 
 ## Data notes for this quarter
 
