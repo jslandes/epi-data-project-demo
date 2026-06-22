@@ -32,7 +32,7 @@ If you're new to the team, start with [`docs/data-dictionary.md`](docs/data-dict
 │
 ├── reports/
 │   ├── quarterly_report_Q3_2024.Rmd    ← Main report document (knit to HTML and PDF)
-│   └── output/                          ← Rendered HTML and PDF output
+│   └── output/                         ← Rendered HTML and PDF output
 │
 └── docs/
     ├── data-dictionary.md       ← Variable definitions and coding notes
