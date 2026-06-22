@@ -1,6 +1,6 @@
 ---
-title: "Communicable Disease Quarterly Report — Q3 2024"
-subtitle: "Region 4 Epidemiology Unit | July 1 – September 30, 2024"
+title: "Communicable Disease Quarterly Report: Q3 2024"
+subtitle: "Region 4 Epidemiology Unit | July 1 - September 30, 2024"
 author: "Region 4 Epidemiology Data Team"
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output:
